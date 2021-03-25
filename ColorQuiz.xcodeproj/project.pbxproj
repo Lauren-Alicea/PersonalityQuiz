@@ -30,7 +30,6 @@
 		AFF651D3260B84D5004011D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF651DD260B8E74004011D4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		AFF651E1260B8E8D004011D4 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		AFF651EC260B960B004011D4 /* goodandcozy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = goodandcozy.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +68,6 @@
 				AFF651CB260B84D5004011D4 /* Main.storyboard */,
 				AFAF81B4260CC79B00FB7440 /* QuestionData.swift */,
 				AFF651DD260B8E74004011D4 /* ResultsViewController.swift */,
-				AFF651EC260B960B004011D4 /* goodandcozy.ttf */,
 				AFF651E1260B8E8D004011D4 /* QuestionsViewController.swift */,
 				AFF651CE260B84D5004011D4 /* Assets.xcassets */,
 				AFF651D0260B84D5004011D4 /* LaunchScreen.storyboard */,

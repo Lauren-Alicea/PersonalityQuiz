@@ -7,11 +7,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="goodandcozy.ttf">
-            <string>goodandcozy</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-NL-M2B">
-                                <rect key="frame" x="119.5" y="416" width="175" height="64.5"/>
+                                <rect key="frame" x="96" y="412.5" width="222.5" height="71"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Color Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRc-x1-t5L">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="goodandcozy" family="good and cozy" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEV-fF-pD0">
-                                        <rect key="frame" x="0.0" y="29.5" width="175" height="35"/>
-                                        <fontDescription key="fontDescription" name="goodandcozy" family="good and cozy" pointSize="23"/>
+                                        <rect key="frame" x="0.0" y="35" width="222.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Begin the Quiz!"/>
                                         <connections>
                                             <segue destination="Cs1-Ma-UYf" kind="show" id="WMR-s1-K5d"/>
@@ -85,8 +80,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pj-9u-thG">
-                                <rect key="frame" x="16" y="76" width="382" height="38.5"/>
-                                <fontDescription key="fontDescription" name="goodandcozy" family="good and cozy" pointSize="40"/>
+                                <rect key="frame" x="16" y="76" width="382" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -180,17 +175,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-5P-5gj">
-                                <rect key="frame" x="16" y="368" width="382" height="99"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-5P-5gj">
+                                <rect key="frame" x="16" y="368" width="382" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-R8-i9O">
-                                        <rect key="frame" x="140.5" y="0.0" width="101.5" height="53"/>
-                                        <fontDescription key="fontDescription" name="goodandcozy" family="good and cozy" pointSize="55"/>
+                                        <rect key="frame" x="132.5" y="0.0" width="117" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-cS-xeJ">
-                                        <rect key="frame" x="167" y="75" width="48" height="24"/>
+                                        <rect key="frame" x="167" y="82" width="48" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -201,8 +196,10 @@
                         <viewLayoutGuide key="safeArea" id="WQ9-HX-7iR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="yPH-5P-5gj" firstAttribute="centerX" secondItem="XbZ-72-ERA" secondAttribute="centerX" id="bkF-59-CUl"/>
                             <constraint firstItem="yPH-5P-5gj" firstAttribute="leading" secondItem="WQ9-HX-7iR" secondAttribute="leading" constant="16" id="td8-Ga-Evl"/>
                             <constraint firstItem="WQ9-HX-7iR" firstAttribute="trailing" secondItem="yPH-5P-5gj" secondAttribute="trailing" constant="16" id="wpL-QV-d80"/>
+                            <constraint firstItem="yPH-5P-5gj" firstAttribute="centerY" secondItem="XbZ-72-ERA" secondAttribute="centerY" id="yfS-I2-pLn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="RKS-SS-wef">
