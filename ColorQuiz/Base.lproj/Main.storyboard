@@ -131,10 +131,33 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-3p-HR7">
+                                <rect key="frame" x="16" y="331" width="382" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0r-bz-2f3">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHz-ZG-ZMG">
+                                        <rect key="frame" x="0.0" y="50" width="382" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-mP-YvW">
+                                        <rect key="frame" x="0.0" y="100" width="382" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjO-0B-B2K">
+                                        <rect key="frame" x="0.0" y="150" width="382" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5H4-Bm-qrF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rtK-3p-HR7" firstAttribute="leading" secondItem="5H4-Bm-qrF" secondAttribute="leading" constant="16" id="7Em-1F-fCX"/>
+                            <constraint firstItem="rtK-3p-HR7" firstAttribute="centerY" secondItem="QRP-kf-xxK" secondAttribute="centerY" id="EkT-Th-gJ8"/>
                             <constraint firstItem="5H4-Bm-qrF" firstAttribute="trailing" secondItem="eQk-pN-z8u" secondAttribute="trailing" constant="16" id="GV4-Aq-NIB"/>
                             <constraint firstItem="5H4-Bm-qrF" firstAttribute="trailing" secondItem="2Pj-9u-thG" secondAttribute="trailing" constant="16" id="KSX-hE-2Ut"/>
                             <constraint firstItem="2Pj-9u-thG" firstAttribute="leading" secondItem="5H4-Bm-qrF" secondAttribute="leading" constant="16" id="LcK-ql-Uzo"/>
@@ -144,9 +167,11 @@
                             <constraint firstItem="eQk-pN-z8u" firstAttribute="centerY" secondItem="QRP-kf-xxK" secondAttribute="centerY" id="YqM-ej-Tw0"/>
                             <constraint firstItem="2Pj-9u-thG" firstAttribute="top" secondItem="5H4-Bm-qrF" secondAttribute="top" constant="20" id="brE-c0-gZO"/>
                             <constraint firstItem="eQk-pN-z8u" firstAttribute="leading" secondItem="5H4-Bm-qrF" secondAttribute="leading" constant="16" id="c7X-sR-7bi"/>
+                            <constraint firstItem="rtK-3p-HR7" firstAttribute="centerX" secondItem="QRP-kf-xxK" secondAttribute="centerX" id="gi6-Fn-OXK"/>
                             <constraint firstItem="5H4-Bm-qrF" firstAttribute="trailing" secondItem="KDO-N5-EWw" secondAttribute="trailing" constant="16" id="iQ1-Ew-jsk"/>
                             <constraint firstItem="eQk-pN-z8u" firstAttribute="centerX" secondItem="QRP-kf-xxK" secondAttribute="centerX" id="nHW-7M-QAF"/>
                             <constraint firstItem="5H4-Bm-qrF" firstAttribute="trailing" secondItem="Z7O-xa-KoH" secondAttribute="trailing" constant="16" id="pHE-yz-uev"/>
+                            <constraint firstItem="5H4-Bm-qrF" firstAttribute="trailing" secondItem="rtK-3p-HR7" secondAttribute="trailing" constant="16" id="sab-cy-p11"/>
                             <constraint firstItem="Z7O-xa-KoH" firstAttribute="centerX" secondItem="QRP-kf-xxK" secondAttribute="centerX" id="t34-nK-5q8"/>
                             <constraint firstItem="Z7O-xa-KoH" firstAttribute="leading" secondItem="5H4-Bm-qrF" secondAttribute="leading" constant="16" id="tbz-4r-awA"/>
                             <constraint firstItem="Z7O-xa-KoH" firstAttribute="centerY" secondItem="QRP-kf-xxK" secondAttribute="centerY" id="wt6-Pl-oYc"/>
@@ -155,11 +180,33 @@
                             <mask key="subviews">
                                 <exclude reference="KDO-N5-EWw"/>
                                 <exclude reference="Z7O-xa-KoH"/>
+                                <exclude reference="rtK-3p-HR7"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jCg-qx-7pI"/>
                     <connections>
+                        <outlet property="button1" destination="hyD-1r-tkp" id="U2K-yc-2Lb"/>
+                        <outlet property="button10" destination="d8J-yL-2Tq" id="R1b-nV-ajS"/>
+                        <outlet property="button11" destination="oAt-Bn-Tt8" id="ev3-ZP-y48"/>
+                        <outlet property="button12" destination="Pua-KZ-sox" id="rfH-Au-p8r"/>
+                        <outlet property="button13" destination="W0r-bz-2f3" id="pVm-Wv-mBK"/>
+                        <outlet property="button14" destination="XHz-ZG-ZMG" id="Rcg-di-ed5"/>
+                        <outlet property="button15" destination="l13-mP-YvW" id="Ovr-ks-4YL"/>
+                        <outlet property="button16" destination="VjO-0B-B2K" id="SvY-QK-srL"/>
+                        <outlet property="button2" destination="Lfq-ja-1xe" id="P8E-cr-4ws"/>
+                        <outlet property="button3" destination="O6K-Zu-fSe" id="rPB-EO-ezo"/>
+                        <outlet property="button4" destination="xAA-Ud-pZe" id="tWF-7U-aSn"/>
+                        <outlet property="button5" destination="Sw7-4m-6FT" id="ex2-vg-S1L"/>
+                        <outlet property="button6" destination="4e0-2N-nSq" id="Ted-ix-n7E"/>
+                        <outlet property="button7" destination="2ft-7k-pOd" id="olW-4O-sNn"/>
+                        <outlet property="button8" destination="0ez-ls-NlJ" id="K3q-dS-wQO"/>
+                        <outlet property="button9" destination="bgw-F8-Z6C" id="YUn-Al-ezh"/>
+                        <outlet property="questionFourStackView" destination="rtK-3p-HR7" id="9JT-yM-Hq8"/>
+                        <outlet property="questionLabel" destination="2Pj-9u-thG" id="EYb-nz-N4n"/>
+                        <outlet property="questionOneStackView" destination="eQk-pN-z8u" id="ZV6-fQ-CLp"/>
+                        <outlet property="questionThreeStackView" destination="Z7O-xa-KoH" id="Irx-Yi-ak8"/>
+                        <outlet property="questionTwoStackView" destination="KDO-N5-EWw" id="1M0-wD-fRS"/>
                         <segue destination="KWG-wS-nwv" kind="show" identifier="ResultsSegue" id="wcX-7p-JSs"/>
                     </connections>
                 </viewController>
