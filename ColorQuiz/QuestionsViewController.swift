@@ -28,6 +28,8 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var button15: UIButton!
     @IBOutlet weak var button16: UIButton!
     
+    @IBOutlet weak var questionProgressView: UIProgressView!
+    
     var questions: [Question] = [
         Question(text: "Friends who know you best say you are what?", type: .question1, answers: [
             Answer(text: "Energetic", type: .sweetPink),
@@ -57,6 +59,8 @@ class QuestionsViewController: UIViewController {
     
     var questionIndex = 0
     
+    var answerChosen: [Answer] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,17 +78,138 @@ class QuestionsViewController: UIViewController {
         navigationItem.title = "Question #\(questionIndex + 1)"
         
         let currentQuestion = questions[questionIndex]
+        let currentAnswer = currentQuestion.answers
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        questionLabel.text = currentQuestion.text
+        questionProgressView.setProgress(totalProgress, animated: true)
         
         switch currentQuestion.type {
         case .question1:
-            questionOneStackView.isHidden = false
+            updateQuestionOneStackView(using: currentAnswer)
         case .question2:
-            questionTwoStackView.isHidden = false
+            updateQuestionTwoStackView(using: currentAnswer)
         case .question3:
-            questionThreeStackView.isHidden = false
+            updateQuestionThreeStackView(using: currentAnswer)
         case .question4:
-            questionFourStackView.isHidden = false
+            updateQuestionFourStackView(using: currentAnswer)
         }
     }
-    
-}
+    func updateQuestionOneStackView(using answers: [Answer]) {
+        questionOneStackView.isHidden = false
+        button1.setTitle(answers[0].text, for: .normal)
+        button2.setTitle(answers[1].text, for: .normal)
+        button3.setTitle(answers[2].text, for: .normal)
+        button4.setTitle(answers[3].text, for: .normal)
+    }
+    func updateQuestionTwoStackView(using answers: [Answer]) {
+        questionTwoStackView.isHidden = false
+        button5.setTitle(answers[0].text, for: .normal)
+        button6.setTitle(answers[1].text, for: .normal)
+        button7.setTitle(answers[2].text, for: .normal)
+        button8.setTitle(answers[3].text, for: .normal)
+    }
+    func updateQuestionThreeStackView(using answers: [Answer]) {
+        questionThreeStackView.isHidden = false
+        button9.setTitle(answers[0].text, for: .normal)
+        button10.setTitle(answers[1].text, for: .normal)
+        button11.setTitle(answers[2].text, for: .normal)
+        button12.setTitle(answers[3].text, for: .normal)
+    }
+    func updateQuestionFourStackView(using answers: [Answer]) {
+        questionFourStackView.isHidden = false
+        button13.setTitle(answers[0].text, for: .normal)
+        button14.setTitle(answers[1].text, for: .normal)
+        button15.setTitle(answers[2].text, for: .normal)
+        button16.setTitle(answers[3].text, for: .normal)
+    }
+    @IBAction func questionOneButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case button1:
+            answerChosen.append(currentAnswers[0])
+        case button2:
+            answerChosen.append(currentAnswers[0])
+        case button3:
+            answerChosen.append(currentAnswers[0])
+        case button4:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+    @IBAction func questionTwoButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case button5:
+            answerChosen.append(currentAnswers[0])
+        case button6:
+            answerChosen.append(currentAnswers[0])
+        case button7:
+            answerChosen.append(currentAnswers[0])
+        case button8:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+    @IBAction func questionThreeButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case button9:
+            answerChosen.append(currentAnswers[0])
+        case button10:
+            answerChosen.append(currentAnswers[0])
+        case button11:
+            answerChosen.append(currentAnswers[0])
+        case button12:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+    @IBAction func questionFourButtonPresssed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case button13:
+            answerChosen.append(currentAnswers[0])
+        case button14:
+            answerChosen.append(currentAnswers[0])
+        case button15:
+            answerChosen.append(currentAnswers[0])
+        case button16:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+        
+        func nextQuestion() {
+            questionIndex += 1
+            
+            if questionIndex < questions.count {
+                updateUI()
+            } else {
+                performSegue(withIdentifier: "ResultsSegue", sender: nil)
+            }
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ResultsSegue" {
+                let resultsViewController = segue.destination as! ResultsViewController
+                resultsViewController.responses = answerChosen
+            }
+        }
+    }

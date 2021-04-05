@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="aqJ-32-wCD">
+                                <rect key="frame" x="-127" y="0.0" width="690" height="911"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-NL-M2B">
                                 <rect key="frame" x="96" y="412.5" width="222.5" height="71"/>
                                 <subviews>
@@ -37,7 +42,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pw7-NL-M2B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hzY-0p-78y"/>
                             <constraint firstItem="pw7-NL-M2B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ksa-rs-G4Q"/>
@@ -46,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="-174"/>
+            <point key="canvasLocation" x="153.62318840579712" y="-174.10714285714286"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="A8R-GB-qQs">
@@ -63,19 +68,31 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="NXX-Y8-RUG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-2N-nSq">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="2n3-aX-DqY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-7k-pOd">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="rlK-ML-74N"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-ls-NlJ">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="8hJ-W7-6O5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -95,18 +112,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgw-F8-Z6C">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="j7d-tR-wK4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-yL-2Tq">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="u65-7P-zcZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAt-Bn-Tt8">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="d3V-2z-Tbk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pua-KZ-sox">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="aQf-VI-d43"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -116,18 +145,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyD-1r-tkp">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="4an-HP-PCq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfq-ja-1xe">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="Gck-1V-HgH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-Zu-fSe">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="kM5-Ld-lLu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAA-Ud-pZe">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="cNJ-H6-IXh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,24 +178,36 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0r-bz-2f3">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionFourButtonPresssed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="XHR-vZ-LIV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHz-ZG-ZMG">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionFourButtonPresssed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="QrD-2q-Iqq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-mP-YvW">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionFourButtonPresssed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="S5I-zp-a16"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjO-0B-B2K">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionFourButtonPresssed:" destination="10t-Yf-JgU" eventType="touchUpInside" id="7Dy-eR-BF4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5H4-Bm-qrF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="light lavender"/>
                         <constraints>
                             <constraint firstItem="rtK-3p-HR7" firstAttribute="leading" secondItem="5H4-Bm-qrF" secondAttribute="leading" constant="16" id="7Em-1F-fCX"/>
                             <constraint firstItem="rtK-3p-HR7" firstAttribute="centerY" secondItem="QRP-kf-xxK" secondAttribute="centerY" id="EkT-Th-gJ8"/>
@@ -205,6 +258,7 @@
                         <outlet property="questionFourStackView" destination="rtK-3p-HR7" id="9JT-yM-Hq8"/>
                         <outlet property="questionLabel" destination="2Pj-9u-thG" id="EYb-nz-N4n"/>
                         <outlet property="questionOneStackView" destination="eQk-pN-z8u" id="ZV6-fQ-CLp"/>
+                        <outlet property="questionProgressView" destination="zbp-7k-0jK" id="Mud-aa-UwO"/>
                         <outlet property="questionThreeStackView" destination="Z7O-xa-KoH" id="Irx-Yi-ak8"/>
                         <outlet property="questionTwoStackView" destination="KDO-N5-EWw" id="1M0-wD-fRS"/>
                         <segue destination="KWG-wS-nwv" kind="show" identifier="ResultsSegue" id="wcX-7p-JSs"/>
@@ -278,6 +332,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="sun" width="660" height="491"/>
+        <namedColor name="light lavender">
+            <color red="0.77583521604537964" green="0.52328234910964966" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
